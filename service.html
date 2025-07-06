@@ -1,0 +1,160 @@
+<html>
+<head>
+     {% load static %}
+<link href="service.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+<style>
+    body{
+
+	background-image:url("{% static "image/image6.1.jpg" %}");
+	margin:0px;
+	padding:0px;
+	font-family: 'Baloo Bhai';
+	color:white;
+}
+
+.header1{
+
+	display:inline-block;
+	position:absolute;
+	left:34px;
+	top:22px;
+	color:white;
+}
+.header1 img{
+	width:70px;
+	filter:invert(100%);
+}
+.header1 div{
+text-align:center;
+font-size:18px;
+
+}
+.header2{
+
+	display:block;
+	width:45%;
+	margin:22px auto;
+}
+.header3{
+
+position:absolute;
+right:34px;
+top:22px;
+display:inline-block;
+color:white;
+}
+.navbar{
+	display:inline-block;
+}
+.navbar li{
+	display:inline-block;
+	font-size:20px;
+}
+.navbar li a{
+	text-decoration:none;
+	color:white;
+	padding:34px 23px;
+}
+.navbar li a:hover, .navbar li a:active{
+	text-decoration:underline;
+	color:grey;
+}
+.btn{
+	margin:0px 9px;
+	color:white;
+	background-color:black;
+	padding: 6px 14px;
+	border:2px solid grey;
+	border-radius:10px;
+	font-size:18px;
+	cursor:pointer;
+	font-family: 'Baloo Bhai';
+}
+.btn:hover{
+	background-color:rgb(31,30,30);
+}
+.container{
+
+	border-radius:10px;
+	height:750px;
+	width:40%;
+	margin:40px;
+	padding:15px;
+
+
+
+
+}
+.box{
+	height:90px;
+	border:2px solid white;
+	border-radius:10px;
+	margin:15px;
+
+
+}
+.container h3,p{
+	text-align:center;
+	width:100%;
+	height:130px;
+	padding:7px 7px;
+	font-size:25px;
+}
+.box:hover h3{
+	transition:all .5s;
+	transform:scale(1.1);
+	color:red;
+}
+.box a{
+    text-decoration: none;
+    color: aliceblue;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+<div class="header1">
+<img src={% static "image/pic.png" %} alt="">
+<div>Hemu Fitness</div>
+</div>
+<div class="header2">
+<ul class="navbar">
+<li><a href="/" class="active">Home</a></li>
+<li><a href="/service">Our Services</a></li>
+<li><a href="/fees">Fees</a></li>
+<li><a href="/about">About Us</a></li>
+</ul>
+</div>
+<div class="header3">
+<a href="/contact"><button class="btn">Contact us</button></a>
+<a href="/login"><button class="btn">Login</button></a>
+</div>
+</div>
+<div class="container">
+<h1 style="text-align:center;">Our Services</h1>
+<div class="box">
+<a href="#"><h3>Aerobics</h3></a>
+</div>
+<div class="box">
+<a href="#"><h3>Cardio</h3></a>
+</div>
+<div class="box">
+<a href="#"><h3>Strength</h3></a>
+</div>
+<div class="box">
+<a href="#"><h3>Weight Gain/Lose</h3></a>
+</div>
+<div class="box">
+<a href="#"><h3>Zumba Dance</h3></a>
+</div>
+<div class="box">
+    <a href="#"><h3>Workout</h3></a>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+

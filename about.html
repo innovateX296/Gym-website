@@ -1,0 +1,151 @@
+<html>
+<head>
+     {% load static %}
+<link href="about.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+    <style>
+        body{
+
+	background-image:url("{% static "image/image6.1.jpg" %}");
+	margin:0px;
+	padding:0px;
+	font-family: 'Baloo Bhai';
+	color:white;
+}
+
+.header1{
+
+	display:inline-block;
+	position:absolute;
+	left:34px;
+	top:22px;
+	color:white;
+}
+.header1 img{
+	width:70px;
+	filter:invert(100%);
+}
+.header1 div{
+text-align:center;
+font-size:18px;
+
+}
+.header2{
+
+	display:block;
+	width:45%;
+	margin:22px auto;
+}
+.header3{
+
+position:absolute;
+right:34px;
+top:22px;
+display:inline-block;
+color:white;
+}
+.navbar{
+	display:inline-block;
+}
+.navbar li{
+	display:inline-block;
+	font-size:20px;
+}
+.navbar li a{
+	text-decoration:none;
+	color:white;
+	padding:34px 23px;
+}
+.navbar li a:hover, .navbar li a:active{
+	text-decoration:underline;
+	color:grey;
+}
+.btn{
+	margin:0px 9px;
+	color:white;
+	background-color:black;
+	padding: 6px 14px;
+	border:2px solid grey;
+	border-radius:10px;
+	font-size:18px;
+	cursor:pointer;
+	font-family: 'Baloo Bhai';
+}
+.btn:hover{
+	background-color:rgb(31,30,30);
+}
+.container{
+
+	border-radius:10px;
+	width:60%;
+	height:800px;
+	margin:40px;
+	padding:15px;
+
+}
+.container h1{
+	text-align:center;
+	cursor:pointer;
+}
+
+.image{
+	border:2px solid white;
+	height:200px;
+	margin:10px;
+	padding:5px;
+	opacity:0.8;
+	border-radius:10px;
+	cursor:pointer;
+
+}
+.image:hover{
+	transition: all .5s;
+	transform:scale(1.1);
+}
+.image img{
+	height:90px;
+	border-radius:50px;
+	display:flex;
+	justify-content:center;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+<div class="header1">
+<img src={% static "image/pic.png" %} alt="">
+<div>Hemu Fitness</div>
+</div>
+<div class="header2">
+<ul class="navbar">
+<li><a href="/" class="active">Home</a></li>
+<li><a href="/service">Our Services</a></li>
+<li><a href="/fees">Fees</a></li>
+<li><a href="/about">About Us</a></li>
+</ul>
+</div>
+<div class="header3">
+<a href="/contact"><button class="btn">Contact us</button></a>
+<a href="/login"><button class="btn">Login</button></a></div>
+</div>
+<div class="container">
+<h1>About Us</h1>
+<div class="image">
+<img src={% static "image/pic1.webp" %} align="center"><p>"Speech Trainer is a VR auditorium where you can practice
+ presentations and learn to overcome your fear of public speaking by addressing a virtual audience.
+ Bring your own presentation (in PDF format) and use the clicker and microphone to practice your speech until you feel ready for the real thing."</p>
+
+</div>
+<div class="image">
+<img src={% static "image/pic2.jpg" %}><p>"Speech Trainer is a VR auditorium where you can practice
+ presentations and learn to overcome your fear of public speaking by addressing a virtual audience.
+ Bring your own presentation (in PDF format) and use the clicker and microphone to practice your speech until you feel ready for the real thing."</p>
+</div>
+<div class="image">
+<img src={% static "image/pic3.jpg" %}><p>"Speech Trainer is a VR auditorium where you can practice
+ presentations and learn to overcome your fear of public speaking by addressing a virtual audience.
+ Bring your own presentation (in PDF format) and use the clicker and microphone to practice your speech until you feel ready for the real thing."</p>
+</div>
+</div>
